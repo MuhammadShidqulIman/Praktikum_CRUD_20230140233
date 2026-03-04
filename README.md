@@ -63,6 +63,7 @@ Response Body (success):
 ### 3️⃣ Get User
 
 **Method:** `GET`
+
 **Endpoint:** `/api/users`
 
 **Response Body (success):**
