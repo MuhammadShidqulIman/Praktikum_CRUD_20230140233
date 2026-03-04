@@ -3,7 +3,7 @@
 
 ![Web Interface](https://github.com/user-attachments/assets/09d9d200-e160-4c6b-9a34-98f1cdc45820)
 
-### 1️⃣ Create User
+### 1️⃣. Create User
 
 **Method:** `POST`  
 **Endpoint:** `/api/users`
@@ -36,7 +36,7 @@ Response Body (failed):
     "path": "/api/users"
 }
 ```
-##2️⃣. Update User
+### 2️⃣. Update User
 
 **Method:** `PUT`  
 **Endpoint:** `/api/users/{id}`
@@ -60,12 +60,12 @@ Response Body (success):
 }
 ```
 
-##3️⃣. Get User
+###3️⃣. Get User
 
 **Method:** `GET`
 **Endpoint:** `/api/users`
 
-Response Body (success):
+**Response Body (success):**
 ```json
 {
     "data": [
@@ -83,12 +83,12 @@ Response Body (success):
     "status": "success"
 }
 ```
-##4️⃣.DELETE User
+###4️⃣.DELETE User
 
 **Method:** `DELETE`
 **Endpoint:** `/api/users/{id}`
 
-Response Body (success):
+**Response Body (success):**
 ```json
 {
     "status": "success delete user with id a0fdf9ad-7043-4103-ad5e-ac4bd89a6182"
