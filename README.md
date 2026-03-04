@@ -60,7 +60,7 @@ Response Body (success):
 }
 ```
 
-###3️⃣. Get User
+### 3️⃣. Get User
 
 **Method:** `GET`
 **Endpoint:** `/api/users`
@@ -83,7 +83,7 @@ Response Body (success):
     "status": "success"
 }
 ```
-###4️⃣.DELETE User
+### 4️⃣. DELETE User
 
 **Method:** `DELETE`
 **Endpoint:** `/api/users/{id}`
