@@ -3,26 +3,77 @@ Tampilan web
 
 1. Create User
 Endpoint: POST /api/users
-Request Body:
-<img width="2871" height="1708" alt="image" src="https://github.com/user-attachments/assets/ebb23fb9-e1f7-4754-a32b-c83b8e5e8de6" />
 
-failed
-<img width="2878" height="1695" alt="image" src="https://github.com/user-attachments/assets/e0494fd8-030a-4d1f-910f-6023e2d20cf3" />
+Request Body:
+{
+  "name" : "Shidqul",
+  "age" : 21
+}
+
+Response Body (success):
+{
+    "data": {
+        "age": 21,
+        "id": "a0fdf9ad-7043-4103-ad5e-ac4bd89a6182",
+        "name": "Shidqul"
+    },
+    "status": "success"
+}
+
+Response Body (failed):
+{
+    "timestamp": "2026-03-04T04:43:25.248Z",
+    "status": 500,
+    "error": "Internal Server Error",
+    "path": "/api/users"
+}
 
 2. Update User
 Endpoint: PUT /api/users/{id}
+
 Request Body:
-<img width="2879" height="1701" alt="image" src="https://github.com/user-attachments/assets/7efcc185-3c8a-4f6b-989f-ceb70ae6756a" />
+{
+  "name" : "Shidqul",
+  "age" : 22
+}
+
+Response Body (success):
+{
+    "data": {
+        "age": 22,
+        "id": "a0fdf9ad-7043-4103-ad5e-ac4bd89a6182",
+        "name": "Shidqul"
+    },
+    "status": "success"
+}
 
 3. Get User
 Endpoint: GET /api/users
-Request Body:
-<img width="2877" height="1689" alt="image" src="https://github.com/user-attachments/assets/95626aff-8ddc-4a0c-8e1a-59e32b23170b" />
+
+Response Body (success):
+{
+    "data": [
+        {
+            "age": 22,
+            "id": "a0fdf9ad-7043-4103-ad5e-ac4bd89a6182",
+            "name": "Shidqul"
+        },
+        {
+            "age": 20,
+            "id": "ffe36667-f437-4246-b0ca-902ed039d934",
+            "name": "Muhammad Shidqul Iman"
+        }
+    ],
+    "status": "success"
+}
 
 4 DELETE User
 Endpoint: DELETE /api/users/{id}
-Request Body:
-<img width="2877" height="1697" alt="image" src="https://github.com/user-attachments/assets/5ac322d1-8d11-4d03-8ba9-1faebe631aac" />
+
+Response Body (success):
+{
+    "status": "success delete user with id a0fdf9ad-7043-4103-ad5e-ac4bd89a6182"
+}
 
 DATABASE
 <img width="2876" height="1702" alt="image" src="https://github.com/user-attachments/assets/c1750975-ff5e-4e8f-8212-fe427928c575" />
