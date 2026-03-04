@@ -1,10 +1,26 @@
-Tampilan web
-<img width="2875" height="1529" alt="image" src="https://github.com/user-attachments/assets/09d9d200-e160-4c6b-9a34-98f1cdc45820" />
+# 🚀 User Management API Documentation - Praktikum 1
 
-1. Create User
-Endpoint: POST /api/users
+Repositori ini berisi dokumentasi lengkap, spesifikasi API, dan panduan penggunaan untuk sistem manajemen pengguna yang dibangun dengan **Spring Boot**, **JPA**, dan **MySQL**.
 
-Request Body:
+---
+
+## 🌐 Tampilan Web Interface
+Aplikasi ini menyediakan antarmuka pengguna (Frontend) sederhana menggunakan HTML dan jQuery untuk mengelola data user secara real-time.
+
+![Web Interface](https://github.com/user-attachments/assets/09d9d200-e160-4c6b-9a34-98f1cdc45820)
+
+---
+
+## 🛠 API Specification
+
+### 1️⃣ Create User
+Menambahkan data pengguna baru ke dalam database.
+
+**Method:** `POST`  
+**Endpoint:** `/api/users`
+
+**Request Body:**
+```json
 {
   "name" : "Shidqul",
   "age" : 21
