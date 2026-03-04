@@ -1,11 +1,5 @@
-# 🚀 User Management API Documentation - Praktikum 1
-
-Repositori ini berisi dokumentasi lengkap, spesifikasi API, dan panduan penggunaan untuk sistem manajemen pengguna yang dibangun dengan **Spring Boot**, **JPA**, dan **MySQL**.
-
----
 
 ## 🌐 Tampilan Web Interface
-Aplikasi ini menyediakan antarmuka pengguna (Frontend) sederhana menggunakan HTML dan jQuery untuk mengelola data user secara real-time.
 
 ![Web Interface](https://github.com/user-attachments/assets/09d9d200-e160-4c6b-9a34-98f1cdc45820)
 
@@ -26,7 +20,9 @@ Menambahkan data pengguna baru ke dalam database.
   "age" : 21
 }
 
+```
 Response Body (success):
+```json
 {
     "data": {
         "age": 21,
@@ -35,8 +31,9 @@ Response Body (success):
     },
     "status": "success"
 }
-
+```
 Response Body (failed):
+```json
 {
     "timestamp": "2026-03-04T04:43:25.248Z",
     "status": 500,
